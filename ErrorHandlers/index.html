@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit={onSubmit(event)}>
+        <input type="text" placeholder="Digite o nome ou id do pokemon" style="width: 200px;" id="pokeInput">
+
+        <button type="submit">Pesquisar</button>
+    </form>
+
+    <h1 id="pokeName"></h1>
+    <h2 id="pokeId"></h2>
+    <img src="" id="pokeSprite" style="width: 200px; aspect-ratio: 1 / 1; display: none">
+</body>
+
+<script src="./pokeapiHandler.js"></script>
+</html>
