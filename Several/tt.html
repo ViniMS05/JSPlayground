@@ -1,0 +1,25 @@
+<button onclick="myFunction1(points)">Sort Alphabetically</button>
+<button onclick="myFunction2(points)">Sort Numerically Ascending</button>
+<button onclick="myFunction3(points)">Sort Numerically Descending</button>
+
+<p id="demo"></p>
+
+<script>
+  const points = [40, 100, 1, 5, 25, 10];
+  document.getElementById("demo").innerHTML = points;
+
+  function myFunction1(arr) {
+    arr.sort();
+    document.getElementById("demo").innerHTML = arr;
+  }
+
+  function myFunction2(arr) {
+    arr.sort((a, b) => a - b);
+    document.getElementById("demo").innerHTML = arr;
+  }
+
+  function myFunction3(arr) {
+    arr.sort((a, b) => b - a);
+    document.getElementById("demo").innerHTML = arr;
+  }
+</script>
